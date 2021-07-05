@@ -1,0 +1,15 @@
+{
+    "name": "walte/final_prog_web1",
+    "autoload": {
+        "psr-4": {
+            "Walte\\FinalProgWeb1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Walter Arce",
+            "email": "walterarce@gmail.com"
+        }
+    ],
+    "require": {}
+}
