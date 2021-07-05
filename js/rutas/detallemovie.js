@@ -1,6 +1,6 @@
 angular.module('DetalleApp',[])
   .component('detallemovie', {
-        templateUrl : '/templates/detalle_tlp.php',
+        templateUrl : '../templates/detalle_tlp.php',
       controller: function ($http,$scope)
       {
           var keyapi= '7f7fe82f4927b1c30d8364d1170db2c1';
@@ -11,10 +11,6 @@ angular.module('DetalleApp',[])
               return 'https://www.youtube.com/embed/' + videoId;
           };
 
-          $scope.templates =
-              [{ name: 'template1.html', url: 'template1.html'},
-                  { name: 'template2.html', url: 'template2.html'}];
-          $scope.template = $scope.templates[0];
 
           var movie = function () {
               $http.get('https://api.themoviedb.org/3/movie/' + id +

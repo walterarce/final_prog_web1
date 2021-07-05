@@ -2,17 +2,6 @@
 <h4 class="d-flex justify-content-between align-items-center mb-3">
     <span class="badge badge-secondary badge-pill">{{ $ctrl.Peliculas.length }}</span>
 </h4>
-<?php
-$url = 'http';
-if (array_key_exists('HTTPS', $_SERVER) && $_SERVER["HTTPS"] == "on") {$url .= "s";}
-$url .= "://";
-if ($_SERVER["SERVER_PORT"] != "80") {
-    $url .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"];
-} else {
-    $url .= $_SERVER["SERVER_NAME"];
-}
-
-?>
 
 <table class="table table-hover">
     <thead></thead>
@@ -22,7 +11,7 @@ if ($_SERVER["SERVER_PORT"] != "80") {
            <td>{{c.overview}}</td>
            <td>
                <picture>
-                    <a ng-href=<?php echo $url."/modulos/detalle.php?idpelicula="?>{{c.id}}>
+                    <a ng-href="modulos/detalle.php?idpelicula={{c.id}}">
                     <img ng-src="https://image.tmdb.org/t/p/w500{{c.poster_path}}"  class="img-thumbnail rounded" >
                </picture>
                </a>
