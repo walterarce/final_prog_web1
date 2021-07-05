@@ -1,10 +1,15 @@
 {
-    "name": "walte/final_prog_web1",
+    "name": "warce/listado",
     "autoload": {
         "psr-4": {
-            "Walte\\FinalProgWeb1\\": "src/"
+            "Listado\\": "src/"
         }
     },
+    "files" : [
+            "src/db/infodb.php","src/modulos/detalle.php",
+            "src/modulos/popularList.php","src/templates/contenidos.php",
+            "src/modulos/detalle_tlp.php","src/templates/listadocine_tlp.php"
+    ],
     "authors": [
         {
             "name": "Walter Arce",
